@@ -7,3 +7,5 @@ edge-tts==6.1.12
 gTTS==2.5.4
 pillow==12.3.0
 
+groq
+
