@@ -1,6 +1,6 @@
 import type { VideoFormData } from '../types/video'
 
-const API_BASE_URL = 'http://127.0.0.1:8000'
+const API_BASE_URL = 'https://ai-video-generator-backend-24gk.onrender.com'
 
 export interface ScriptScene {
   scene_number: number
