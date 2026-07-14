@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 antialiased;
+  }
+}
+
+@layer components {
+  .generator-card {
+    @apply rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-sm p-6 sm:p-8 shadow-xl shadow-black/20;
+  }
+
+  .form-label {
+    @apply block text-sm font-medium text-slate-300 mb-2;
+  }
+
+  .form-hint {
+    @apply mt-2 text-xs text-slate-500;
+  }
+
+  .form-input {
+    @apply w-full rounded-xl border border-slate-700 bg-slate-800/80 px-4 py-3 text-slate-100 placeholder:text-slate-500 transition-colors focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20;
+  }
+
+  .form-select {
+    @apply w-full appearance-none rounded-xl border border-slate-700 bg-slate-800/80 px-4 py-3 pr-10 text-slate-100 transition-colors focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20 cursor-pointer;
+  }
+
+  .duration-option {
+    @apply rounded-xl border border-slate-700 bg-slate-800/50 px-4 py-3 text-slate-400 transition-all hover:border-slate-600 hover:text-slate-200;
+  }
+
+  .duration-option-active {
+    @apply border-brand-500 bg-brand-600/20 text-brand-300 ring-1 ring-brand-500/30;
+  }
+
+  .generate-button {
+    @apply w-full flex items-center justify-center gap-2 rounded-xl bg-brand-600 hover:bg-brand-500 active:bg-brand-700 px-6 py-4 text-white font-semibold transition-colors shadow-lg shadow-brand-600/25 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .script-result-card {
+    @apply rounded-2xl border border-slate-800 bg-slate-900/80 p-5 sm:p-6 shadow-lg shadow-black/20;
+  }
+
+  .script-meta-tag {
+    @apply inline-flex items-center rounded-full border border-slate-700 bg-slate-800/80 px-3 py-1 text-xs text-slate-400;
+  }
+
+  .script-content {
+    @apply rounded-xl border border-slate-800 bg-slate-950/60 overflow-hidden;
+  }
+
+  .script-text {
+    @apply p-4 sm:p-5 text-sm sm:text-base text-slate-300 leading-relaxed whitespace-pre-wrap font-mono overflow-x-auto;
+  }
+
+  .scene-card {
+    @apply rounded-xl border border-slate-800 bg-slate-950/60 p-4 sm:p-5;
+  }
+
+  .scene-image {
+    @apply w-full rounded-lg border border-slate-800 object-cover max-h-80;
+  }
+}

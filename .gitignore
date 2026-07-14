@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Build outputs
+frontend/dist/
+dist/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+backend/.venv/
+
+# Environment
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+# AI Agent files
+.agents/
+
+# Generated videos
+backend/static/generated/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+# Test files
+backend/test*.mp4
+backend/test*.ass
+backend/test*.srt
+
+# Scratch files
+scratch/
+
